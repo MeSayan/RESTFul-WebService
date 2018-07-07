@@ -1,6 +1,7 @@
 package com.sayan.model;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 // Tell JPA to build a Relation (Table) for this class, where the fields
@@ -10,6 +11,7 @@ import javax.persistence.Id;
 public class Topic {
 
 	@Id // Tell JPA that this is the primary key for this relation
+	@GeneratedValue
  	private String id;
 	private String name;
 	private String description;
